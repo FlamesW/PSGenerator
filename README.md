@@ -6,7 +6,6 @@
 * Alt must have PS Gamepass~
 * Alt must afk in game 24/7~
 * Alt must have a good executor~
-* Note: The acount name must be full username.
 
 ```lua
 -- // Flame's PS Generator~
@@ -15,5 +14,6 @@ shared.Settings = {Account = "Account_Name",Enabled = true,Cooldown = 15,AntiAFK
 };
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/PSGenerator/home/AUT.lua"))();
 ```
+* Note: The acount name must be full username.
 
 ##### Made by: @Flames9925 (Discord)~
