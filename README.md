@@ -1,6 +1,6 @@
 # 🤖 PS Generator [AUT]~
 
-** ⚠️ Do not use Xeno, Its not a good executor.
+⚠️ Do not use Xeno, Its not a good executor.
 
 ## [Requirements]:
 * Alt must have PS Gamepass~
