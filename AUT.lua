@@ -69,4 +69,5 @@ end
         end
         task.wait(shared.Settings.Cooldown);
     end
+
 -- end
