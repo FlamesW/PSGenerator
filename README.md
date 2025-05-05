@@ -2,7 +2,7 @@
 
 ⚠️ Do not use Xeno, Its not a good executor.
 
-## [Requirements]:
+## [📋 Requirements]:
 * Alt must have PS Gamepass~
 * Alt must afk in game 24/7~
 * Alt must have a good executor~
