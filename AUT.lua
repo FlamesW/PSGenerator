@@ -12,6 +12,8 @@ local HttpService = cloneref(game:GetService("HttpService"));
 local VirtualUser = cloneref(game:GetService("VirtualUser"));
 local Players = cloneref(game:GetService("Players"));
 
+if Players.LocalPlayer.Name ~= shared.Settings.Account then return end;
+
 shared.SendData = function(msg)
     local Link = shared.Settings.Webhook;
     local Type = http_request or request;
@@ -33,10 +35,7 @@ shared.SendData = function(msg)
     end)
 end
 
--- if not shared.__LOADED then shared.__LOADED = true;
-
-    if Players.LocalPlayer.Name ~= shared.Settings.Account then return end;
-
+if not shared.__LOADED then shared.__LOADED = true;
     if shared.AntiAFK == true then
         Players.LocalPlayer.Idled:Connect(function()
             VirtualUser:CaptureController();VirtualUser:ClickButton2(Vector2.new());
@@ -69,5 +68,4 @@ end
         end
         task.wait(shared.Settings.Cooldown);
     end
-
--- end
+end
