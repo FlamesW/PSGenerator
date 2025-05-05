@@ -17,7 +17,7 @@ if Players.LocalPlayer.Name ~= shared.Settings.Account then return end;
 
 shared.SendData = function(msg)
     local Link = shared.Settings.Webhook;
-    local Type = http_request or request;
+    local Type = (http and http.request) or (request) or (http_request);
 
     if not Type or not Link then return end;
 
