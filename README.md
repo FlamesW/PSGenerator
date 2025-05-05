@@ -1,4 +1,4 @@
-# 🤖 PS Generator [AUT]~
+# 🤖 PS Generator [A Universal Time]~
 
 #### ⚠️ Do not use Xeno, Its not a good executor.
 
