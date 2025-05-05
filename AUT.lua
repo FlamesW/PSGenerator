@@ -3,6 +3,7 @@ shared.Settings = {Account = "Account_Name",Enabled = true,Cooldown = 15,AntiAFK
     Webhook = "Webhook_Link_Here",
 };
 --]]
+
 repeat task.wait(0.1) until game:IsLoaded();
 
 local cloneref = cloneref or function(o) return o end;
@@ -32,12 +33,11 @@ shared.SendData = function(msg)
     end)
 end
 
--- if not shared.__LOADED then shared.__LOADED = true
+-- if not shared.__LOADED then shared.__LOADED = true;
 
     if Players.LocalPlayer.Name ~= shared.Settings.Account then return end;
 
     if shared.AntiAFK == true then
-        -- print("ANTI AFK LOADED!~");
         Players.LocalPlayer.Idled:Connect(function()
             VirtualUser:CaptureController();VirtualUser:ClickButton2(Vector2.new());
         end)
@@ -58,17 +58,13 @@ end
 
         if Succ then
             if Res == nil then
-                -- print("You need PS Gamepass.");
                 shared.SendData("You need PS Gamepass.");
             elseif Res == "CodeDebounce" then
-                -- print("You are on cooldown brah~");
                 shared.SendData("You are on cooldown brah~");
             else
-                -- print("Code Generated:\n```"..Res.."```");
                 shared.SendData(Res);
             end
         else
-            -- print("Code Generation failed~");
             shared.SendData("Code Generation failed~");
         end
         task.wait(shared.Settings.Cooldown);
