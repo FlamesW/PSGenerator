@@ -1,5 +1,7 @@
 # 🤖 PS Generator [AUT]~
 
+** ⚠️ Do not use Xeno, Its not a good executor.
+
 ## [Requirements]:
 * Alt must have PS Gamepass~
 * Alt must afk in game 24/7~
