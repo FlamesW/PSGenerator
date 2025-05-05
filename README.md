@@ -6,6 +6,7 @@
 * Alt must have PS Gamepass~
 * Alt must afk in game 24/7~
 * Alt must have a good executor~
+* Note: The acount name must be full username.
 
 ```lua
 -- // Flame's PS Generator~
