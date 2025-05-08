@@ -20,16 +20,8 @@ shared.SendData = function(msg)
     local Type = (http and http.request) or (request) or (http_request);
 
     if not Type or not Link then return end;
-
-    local Data = {
-        ["content"] = "A New Private Server Code Just Dropped!~",
-        ["embeds"] = {{
-            ["title"] = "Private Server Generator~",
-            ["description"] = "**Generated Code:** ```"..msg.."```\n**"..os.date("%d/%m/%Y - %I:%M:%S %p").."**";
-            ["type"] = "rich",
-            ["color"] = 0x000000,
-        }},
-    };
+	
+	local Data = {["content"] = "* A new Private Server just dropped! ** (The previous code will not work) **",["embeds"] = {{["title"] = "📊  Private Server Generator~",["description"] = "**Generated Code:** ```"..msg.."```",["color"] = 0x000000,["thumbnail"] = {["url"] = "https://i.imgur.com/fncvNAe.png"},["fields"] = {{["name"] = "For Mobile:",["value"] = msg,["inline"] = false},{["name"] = "",["value"] = "**"..os.date("%d/%m/%Y - %I:%M:%S %p").."**",["inline"] = false}},["footer"] = {["text"] = "🔥 Flameware • Made by @Flames9925"},["type"] = "rich"}}};
 
     pcall(function()
         Type({Url = Link,Body = HttpService:JSONEncode(Data),Method = "POST",Headers = {["content-type"] = "application/json"}});
