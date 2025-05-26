@@ -12,6 +12,6 @@ shared.Settings = {Account = "Account_Name",Enabled = true,Cooldown = 25,AntiAFK
 };
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesW/PSGenerator/home/AUT.lua"))();
 ```
-* Note: The Account name must be full username.
+* Note: The Account name must be full username (To avoid execute duplications with multi accs).
 
 ##### Made by: @Flames9925 (Discord).
